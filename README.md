@@ -1,0 +1,1 @@
+to run this program you firstly compile writing in terminal "cob -x hello.cob", after compiling will create an executable, write in terminal "./ hello" after that will display on terminal saying "Hello World :3"
