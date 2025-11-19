@@ -1,0 +1,23 @@
+IDENTIFICATION DIVISION.
+           PROGRAM-ID. CALCUL.
+
+       ENVIRONMENT DIVISION.
+      
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 RESULT PIC 99.
+       01 NUMB1  PIC 99.
+       01 NUMB2  PIC 99.
+      
+       PROCEDURE DIVISION.
+       PRINCIPAL.
+
+       MOVE 10  TO NUMB1.
+       MOVE 8  TO NUMB2.
+
+           COMPUTE RESULT = NUMB1 - NUMB2.
+           DISPLAY "result: " RESULT.
+           DISPLAY " ".
+
+       STOP RUN.
+       END PROGRAM CALCUL.
