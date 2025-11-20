@@ -1,0 +1,26 @@
+IDENTIFICATION DIVISION.
+           PROGRAM-ID.  IMC.
+           AUTHOR. ANGEL YURI.
+
+       ENVIRONMENT DIVISION.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+
+       01 ALTURA       PIC 9V99.
+       01 PESO         PIC 999.
+       01 IMC_TOTAL    PIC ZZ9.99.
+
+       PROCEDURE DIVISION.
+       PRINCIPAL.
+           DISPLAY "DIGITE A SUA ALTURA EM METROS: ".
+           ACCEPT ALTURA.
+           
+           DISPLAY "DIGITE O SEU PESO EM KILOS: ".
+           ACCEPT PESO.
+
+           COMPUTE IMC_TOTAL = PESO / (ALTURA ** 2).
+           DISPLAY "SEU IMC É " IMC_TOTAL.
+       
+       STOP RUN.
+       END PROGRAM IMC.
